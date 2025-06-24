@@ -1,21 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.demo.ProductPageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-28T15:56:06" hostname="k-zhukov" time="5.872">
+<testsuite name="com.example.demo.ProductPageTest" tests="7" skipped="0" failures="5" errors="0" timestamp="2025-06-24T20:28:15" hostname="LAPTOP-O88U9KDA" time="85.122">
   <properties/>
-  <testcase name="search()" classname="com.example.demo.ProductPageTest" time="5.872"/>
+  <testcase name="productCard_actionOpener()" classname="com.example.demo.ProductPageTest" time="20.346">
+    <failure message="Element not found {[data-testid='dropdownactionsheet-item-bookmark-not-checked']}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796915115.0.png&#13;&#10;Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796915115.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid='dropdownactionsheet-item-bookmark-not-checked']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[data-testid='dropdownactionsheet-item-bookmark-not-checked']}
+Expected: visible
+Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796915115.0.png
+Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796915115.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid='dropdownactionsheet-item-bookmark-not-checked']&quot;}
+	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at app//com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy17.shouldBe(Unknown Source)
+	at app//com.example.demo.ProductPageTest.productCard_actionOpener(ProductPageTest.java:72)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid='dropdownactionsheet-item-bookmark-not-checked']&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [846b86159036f78cb540b257ac445f27, findElement {using=css selector, value=[data-testid='dropdownactionsheet-item-bookmark-not-checked']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Арина\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:30149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:30149/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 846b86159036f78cb540b257ac445f27
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base@17.0.12/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.12/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.12/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at app//com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+</failure>
+  </testcase>
+  <testcase name="search()" classname="com.example.demo.ProductPageTest" time="8.886"/>
+  <testcase name="productCard_ClickAvatar()" classname="com.example.demo.ProductPageTest" time="11.153">
+    <failure message="Element should have match attribute href~//club225299895/ {[data-testid='market_item_page_group_avatar']}&#13;&#10;Element: '&lt;a aria-label=&quot;Test public for test&quot; class=&quot;vkuiAvatar__host vkuiImageBase__host vkuiImageBase__loaded vkuiClickable__host vkuiClickable__realClickable vkuistyles__-focus-visible vkuiRootComponent__host&quot; data-testid=&quot;market_item_page_group_avatar&quot; href=&quot;/club225299895&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;'&#13;&#10;Actual value: href~/https://vk.com/club225299895/&#13;&#10;Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796935416.1.png&#13;&#10;Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796935416.1.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have match attribute href~//club225299895/ {[data-testid='market_item_page_group_avatar']}
+Element: '&lt;a aria-label=&quot;Test public for test&quot; class=&quot;vkuiAvatar__host vkuiImageBase__host vkuiImageBase__loaded vkuiClickable__host vkuiClickable__realClickable vkuistyles__-focus-visible vkuiRootComponent__host&quot; data-testid=&quot;market_item_page_group_avatar&quot; href=&quot;/club225299895&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;'
+Actual value: href~/https://vk.com/club225299895/
+Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796935416.1.png
+Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796935416.1.html
+Timeout: 4 s.
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy17.shouldHave(Unknown Source)
+	at app//com.example.demo.ProductPageTest.productCard_ClickAvatar(ProductPageTest.java:85)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="productCard_ShouldDisplayMainElements()" classname="com.example.demo.ProductPageTest" time="11.269">
+    <failure message="Element should be visible {[data-testid='market_item_page_group_link']}&#13;&#10;Element: '&lt;a class=&quot;vkitLink__link--WXYoI vkitLink__secondary--4un6Q vkitLink__withIconInChildren--MOP1u vkuiInternalTappable vkuiLink__host vkuiLink__withUnderline vkuiTappable__host vkuiTappable__hasPointerNone vkuiClickable__host vkuiClickable__realClickable vkuistyles__-focus-visible vkuiRootComponent__host&quot; data-testid=&quot;market_item_page_group_link&quot; href=&quot;https://vk.com/market-225299895?category=2001&quot; target=&quot;_blank&quot; displayed:false&gt;&lt;/a&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796946625.2.png&#13;&#10;Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796946625.2.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {[data-testid='market_item_page_group_link']}
+Element: '&lt;a class=&quot;vkitLink__link--WXYoI vkitLink__secondary--4un6Q vkitLink__withIconInChildren--MOP1u vkuiInternalTappable vkuiLink__host vkuiLink__withUnderline vkuiTappable__host vkuiTappable__hasPointerNone vkuiClickable__host vkuiClickable__realClickable vkuistyles__-focus-visible vkuiRootComponent__host&quot; data-testid=&quot;market_item_page_group_link&quot; href=&quot;https://vk.com/market-225299895?category=2001&quot; target=&quot;_blank&quot; displayed:false&gt;&lt;/a&gt;'
+Actual value: hidden
+Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796946625.2.png
+Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796946625.2.html
+Timeout: 4 s.
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy17.shouldBe(Unknown Source)
+	at app//com.example.demo.ProductPageTest.productCard_ShouldDisplayMainElements(ProductPageTest.java:39)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="productCard_reportButton()" classname="com.example.demo.ProductPageTest" time="7.233"/>
+  <testcase name="productCard_primaryButton()" classname="com.example.demo.ProductPageTest" time="13.305">
+    <failure message="Element not found {[data-testid='box_title_text']}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796966947.3.png&#13;&#10;Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796966947.3.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid='box_title_text']&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {[data-testid='box_title_text']}
+Expected: visible
+Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796966947.3.png
+Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796966947.3.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid='box_title_text']&quot;}
+	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at app//com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy17.should(Unknown Source)
+	at app//com.example.demo.ProductPageTest.productCard_primaryButton(ProductPageTest.java:58)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-testid='box_title_text']&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [846b86159036f78cb540b257ac445f27, findElement {using=css selector, value=[data-testid='box_title_text']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Арина\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:30149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:30149/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 846b86159036f78cb540b257ac445f27
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base@17.0.12/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.12/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.12/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at app//com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+</failure>
+  </testcase>
+  <testcase name="productCard_shareButton()" classname="com.example.demo.ProductPageTest" time="12.696">
+    <failure message="Element should be visible {[data-testid='box_title_text']}&#13;&#10;Element: '&lt;div aria-level=&quot;2&quot; class=&quot;box_title&quot; data-testid=&quot;box_title_text&quot; role=&quot;heading&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796979918.4.png&#13;&#10;Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796979918.4.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {[data-testid='box_title_text']}
+Element: '&lt;div aria-level=&quot;2&quot; class=&quot;box_title&quot; data-testid=&quot;box_title_text&quot; role=&quot;heading&quot; displayed:false&gt;&lt;/div&gt;'
+Actual value: hidden
+Screenshot: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796979918.4.png
+Page source: file:/C:/Users/Арина/IdeaProjects/test_pero/build/reports/tests/1750796979918.4.html
+Timeout: 4 s.
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy17.shouldBe(Unknown Source)
+	at app//com.example.demo.ProductPageTest.productCard_shareButton(ProductPageTest.java:50)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/k.zhukov/AquaProjects/test_pero/build/downloads/1711641366532_42982_1
+  <system-err><![CDATA[[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Арина\IdeaProjects\test_pero\build\downloads\1750796896165_19128_1
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-мар. 28, 2024 6:56:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 123
-мар. 28, 2024 6:56:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 123.0.6312.86. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=123.0.6312.86 Platform=mac
+июн. 24, 2025 11:28:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 137
+июн. 24, 2025 11:28:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 137.0.7151.120. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=137.0.7151.120 Platform=windows
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on mac (373beddc4e47e161ea5f112aaf28fb23)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on mac (373beddc4e47e161ea5f112aaf28fb23),proxy=null,downloadsFolder=/Users/k.zhukov/AquaProjects/test_pero/build/downloads/1711641366532_42982_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (846b86159036f78cb540b257ac445f27)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (846b86159036f78cb540b257ac445f27),proxy=null,downloadsFolder=C:\Users\Арина\IdeaProjects\test_pero\build\downloads\1750796896165_19128_1] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Арина\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
 ]]></system-err>
 </testsuite>
